@@ -1,0 +1,20 @@
+#!/bin/bash
+###########
+## DEPLOY
+###########
+
+rm -rf express/build
+
+echo "+++ building client +++"
+cd client
+npm run build
+
+echo "+++ building server +++"
+cd ../express
+npm run build
+cp -R ../client/build ./build
+
+echo "+++ compressing +++"
+
+zip -r -X -q ../archive.zip *
+cd ..

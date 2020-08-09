@@ -1,0 +1,10 @@
+.renviron
+.Rproj.user
+rsconnect
+node_modules
+client/node_modules
+express/node_modules
+server.compiled.js
+.RData
+.env
+.env.development.local
