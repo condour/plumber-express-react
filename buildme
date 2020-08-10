@@ -1,7 +1,7 @@
 #!/bin/bash
-###########
-## DEPLOY
-###########
+##################
+## DEPLOY SCRIPT #
+##################
 
 rm -rf express/build
 

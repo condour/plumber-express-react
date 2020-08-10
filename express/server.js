@@ -16,9 +16,9 @@ const app = express();
 // This is also where you'd validate the user's JWT to make sure they're allowed 
 // access. But we're not doing that here yet.
 
-app.use('/proxy', proxy(process.env.plumber_url, {
+app.use('/proxy', proxy(process.env.EXPRESS_PLUMBER_API_URL, {
   proxyReqOptDecorator: function (proxyReqOpts) {
-    proxyReqOpts.headers = {"Authorization": `Key ${process.env.plumber_key}`};
+    proxyReqOpts.headers = {"Authorization": `Key ${process.env.EXPRESS_PLUMBER_API_KEY}`};
     return proxyReqOpts;
   }
 }));

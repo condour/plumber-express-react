@@ -8,3 +8,5 @@ server.compiled.js
 .RData
 .env
 .env.development.local
+archive.zip
+archive
