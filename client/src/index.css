@@ -1,0 +1,47 @@
+#root {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+.app {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+h1 {
+  text-align: center;
+  margin: 24px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 300px;
+  margin: auto;
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  grid-gap: 1rem;
+}
+.button-holder {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+.button-holder button {
+  border-radius: 0;
+  background-color: #ddd
+}
+input, button {
+  border-radius: 0;
+  border: 1px solid #eeeeee;
+}
+.results {
+  grid-template-columns: 1fr;
+  display: grid;
+  text-align: center;
+  padding: 12px;
+  margin: auto;
+  margin-top: 24px;
+}
