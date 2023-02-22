@@ -35,8 +35,8 @@ Your Express environment will also need to be set. For this example we use the c
 
 The .env file should contain:
 
-EXPRESS_PLUMBER_API_URL=https://pam-npn.intranet.mckinsey.com
-EXPRESS_PLUMBER_API_KEY=YVGVZKrqVnmLIZfTYufMNHNUSKk950p2
+EXPRESS_PLUMBER_API_URL=<YOUR INSTALLATION URL>
+EXPRESS_PLUMBER_API_KEY=<YOUR KEY>
 
 ## Help!
 
